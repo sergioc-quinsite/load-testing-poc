@@ -1,0 +1,14 @@
+services:
+  locust:
+    image: locustio/locust
+    env_file:
+      - .env.locust
+    volumes:
+      - .:/mnt/locust
+    working_dir: /mnt/locust
+    ports:
+      - "8089:8089"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    command: >
+      -f locustfile.py --host http://host.docker.internal:8000
