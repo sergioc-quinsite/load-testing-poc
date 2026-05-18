@@ -1,0 +1,11 @@
+services:
+  k6:
+    image: grafana/k6:latest
+    env_file:
+      - .env
+    volumes:
+      - ./tests:/scripts
+    working_dir: /scripts
+    entrypoint: ["k6"]
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
