@@ -74,7 +74,7 @@
         <hashTree>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="233777307">Response Code = 200</stringProp>
+              <stringProp name="233777307">200</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -164,7 +164,7 @@ vars.put(&quot;xsrf_token&quot;, URLDecoder.decode(xsrf, &quot;UTF-8&quot;))</st
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="233778270">Response Code = 302</stringProp>
+              <stringProp name="233778270">302</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -202,7 +202,7 @@ vars.put(&quot;xsrf_token&quot;, URLDecoder.decode(xsrf, &quot;UTF-8&quot;))</st
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="233777307">Response Code = 200</stringProp>
+              <stringProp name="233777307">200</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>

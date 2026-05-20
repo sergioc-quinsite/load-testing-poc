@@ -16,5 +16,8 @@ docker compose run --rm jmeter \
   -o /results/report
 ```
 
+## JMeter fails if the report folder already exists:
 
-
+```bash
+rm -rf results/report results/results.jtl
+```
