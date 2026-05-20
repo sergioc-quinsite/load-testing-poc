@@ -1,0 +1,1381 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1779278327851,934,GET /login,200,OK,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2738,135,1,1,http://host.docker.internal:8000/login,485,0,13
+1779278328795,208,GET /login,200,OK,Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2738,135,2,2,http://host.docker.internal:8000/login,60,0,0
+1779278329204,249,POST /login,419,unknown status,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,2,2,http://host.docker.internal:8000/login,65,0,3
+1779278329204,464,POST /login,419,unknown status,Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,2,2,http://host.docker.internal:8000/login,310,0,3
+1779278329459,412,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,3,3,http://localhost:8000/login,244,0,1
+1779278329459,409,GET /app/dashboard-0,302,Found,Thread Group 1-1,text,true,,1566,952,3,3,http://host.docker.internal:8000/app/dashboard,244,0,1
+1779278329870,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-1,text,false,,3164,0,3,3,http://localhost:8000/login,0,0,1
+1779278329669,380,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,3,3,http://localhost:8000/login,229,0,1
+1779278329669,374,GET /app/dashboard-0,302,Found,Thread Group 1-2,text,true,,1566,952,3,3,http://host.docker.internal:8000/app/dashboard,229,0,1
+1779278330047,2,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-2,text,false,,3164,0,3,3,http://localhost:8000/login,0,0,2
+1779278329795,489,GET /login,200,OK,Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2738,135,3,3,http://host.docker.internal:8000/login,327,0,1
+1779278329873,629,GET /login,200,OK,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,3,3,http://host.docker.internal:8000/login,461,0,0
+1779278330054,658,GET /login,200,OK,Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,3,3,http://host.docker.internal:8000/login,492,0,2
+1779278330287,625,POST /login,419,unknown status,Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,4,4,http://host.docker.internal:8000/login,473,0,0
+1779278330509,619,POST /login,419,unknown status,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,4,4,http://host.docker.internal:8000/login,455,0,1
+1779278330717,616,POST /login,419,unknown status,Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,4,4,http://host.docker.internal:8000/login,457,0,0
+1779278330795,747,GET /login,200,OK,Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2738,135,4,4,http://host.docker.internal:8000/login,583,0,0
+1779278330915,853,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,4,4,http://localhost:8000/login,688,0,1
+1779278330915,852,GET /app/dashboard-0,302,Found,Thread Group 1-3,text,true,,1566,952,4,4,http://host.docker.internal:8000/app/dashboard,688,0,1
+1779278331768,0,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-3,text,false,,3164,0,4,4,http://localhost:8000/login,0,0,0
+1779278331130,837,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,5,5,http://localhost:8000/login,672,0,1
+1779278331130,836,GET /app/dashboard-0,302,Found,Thread Group 1-1,text,true,,1566,952,5,5,http://host.docker.internal:8000/app/dashboard,672,0,1
+1779278331966,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-1,text,false,,3164,0,5,5,http://localhost:8000/login,0,0,1
+1779278331335,846,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,5,5,http://localhost:8000/login,689,0,1
+1779278331335,843,GET /app/dashboard-0,302,Found,Thread Group 1-2,text,true,,1566,952,5,5,http://host.docker.internal:8000/app/dashboard,689,0,1
+1779278332179,2,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-2,text,false,,3164,0,5,5,http://localhost:8000/login,0,0,2
+1779278331550,842,POST /login,419,unknown status,Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,5,5,http://host.docker.internal:8000/login,677,0,2
+1779278331769,836,GET /login,200,OK,Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,5,5,http://host.docker.internal:8000/login,676,0,0
+1779278331792,1021,GET /login,200,OK,Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2738,135,6,6,http://host.docker.internal:8000/login,865,0,1
+1779278331968,1050,GET /login,200,OK,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,6,6,http://host.docker.internal:8000/login,896,0,1
+1779278332185,1052,GET /login,200,OK,Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,6,6,http://host.docker.internal:8000/login,893,0,1
+1779278332394,1050,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,6,6,http://localhost:8000/login,887,0,1
+1779278332394,1044,GET /app/dashboard-0,302,Found,Thread Group 1-4,text,true,,1566,952,6,6,http://host.docker.internal:8000/app/dashboard,887,0,1
+1779278333442,2,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-4,text,false,,3164,0,6,6,http://localhost:8000/login,0,0,2
+1779278332611,1033,POST /login,419,unknown status,Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,6,6,http://host.docker.internal:8000/login,873,0,0
+1779278332795,1043,GET /login,200,OK,Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2738,135,7,7,http://host.docker.internal:8000/login,889,0,1
+1779278332819,1234,POST /login,419,unknown status,Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,7,7,http://host.docker.internal:8000/login,1074,0,1
+1779278333027,1235,POST /login,419,unknown status,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,7,7,http://host.docker.internal:8000/login,1072,0,1
+1779278333244,1216,POST /login,419,unknown status,Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,7,7,http://host.docker.internal:8000/login,1062,0,1
+1779278333447,1221,GET /login,200,OK,Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,7,7,http://host.docker.internal:8000/login,1052,0,1
+1779278333646,1260,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,8,8,http://localhost:8000/login,1099,0,2
+1779278333646,1257,GET /app/dashboard-0,302,Found,Thread Group 1-3,text,true,,1566,952,8,8,http://host.docker.internal:8000/app/dashboard,1099,0,2
+1779278334904,2,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-3,text,false,,3164,0,8,8,http://localhost:8000/login,0,0,2
+1779278333795,1319,GET /login,200,OK,Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2738,135,8,8,http://host.docker.internal:8000/login,1154,0,1
+1779278333844,1515,POST /login,419,unknown status,Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,8,8,http://host.docker.internal:8000/login,1346,0,1
+1779278334054,1510,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,8,8,http://localhost:8000/login,1342,0,1
+1779278334054,1506,GET /app/dashboard-0,302,Found,Thread Group 1-5,text,true,,1566,952,8,8,http://host.docker.internal:8000/app/dashboard,1342,0,1
+1779278335563,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-5,text,false,,3164,0,8,8,http://localhost:8000/login,0,0,1
+1779278334263,1516,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,8,8,http://localhost:8000/login,1349,0,1
+1779278334263,1513,GET /app/dashboard-0,302,Found,Thread Group 1-1,text,true,,1566,952,8,8,http://host.docker.internal:8000/app/dashboard,1349,0,1
+1779278335777,2,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-1,text,false,,3164,0,8,8,http://localhost:8000/login,0,0,2
+1779278334460,1522,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,9,9,http://localhost:8000/login,1351,0,1
+1779278334460,1521,GET /app/dashboard-0,302,Found,Thread Group 1-2,text,true,,1566,952,9,9,http://host.docker.internal:8000/app/dashboard,1351,0,1
+1779278335981,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-2,text,false,,3164,0,9,9,http://localhost:8000/login,0,0,1
+1779278334670,1503,POST /login,419,unknown status,Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,9,9,http://host.docker.internal:8000/login,1346,0,0
+1779278334793,1598,GET /login,200,OK,Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2738,135,9,9,http://host.docker.internal:8000/login,1437,0,0
+1779278334909,1673,GET /login,200,OK,Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,9,9,http://host.docker.internal:8000/login,1525,0,1
+1779278335120,1640,POST /login,419,unknown status,Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,9,9,http://host.docker.internal:8000/login,1490,0,1
+1779278335361,1608,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1437,0,1
+1779278335361,1606,GET /app/dashboard-0,302,Found,Thread Group 1-6,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1437,0,1
+1779278336968,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-6,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278335566,1583,GET /login,200,OK,Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1438,0,0
+1779278335783,1580,GET /login,200,OK,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1414,0,2
+1779278335794,1761,GET /login,200,OK,Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2738,135,10,10,http://host.docker.internal:8000/login,1600,0,0
+1779278335982,1789,GET /login,200,OK,Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1632,0,1
+1779278336175,1797,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1654,0,1
+1779278336175,1796,GET /app/dashboard-0,302,Found,Thread Group 1-4,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1654,0,1
+1779278337971,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-4,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278336395,1783,POST /login,419,unknown status,Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1618,0,1
+1779278336586,1798,POST /login,419,unknown status,Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1642,0,1
+1779278336760,1834,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1669,0,1
+1779278336760,1832,GET /app/dashboard-0,302,Found,Thread Group 1-7,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1669,0,1
+1779278338593,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-7,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,0
+1779278336795,1991,GET /login,200,OK,Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2738,135,10,10,http://host.docker.internal:8000/login,1828,0,1
+1779278336969,2025,GET /login,200,OK,Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1862,0,1
+1779278337154,2031,POST /login,419,unknown status,Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1873,0,1
+1779278337371,2010,POST /login,419,unknown status,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1851,0,1
+1779278337561,2014,POST /login,419,unknown status,Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1851,0,0
+1779278337777,2003,POST /login,419,unknown status,Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1831,0,1
+1779278337972,2009,GET /login,200,OK,Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1847,0,0
+1779278338180,1986,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1822,0,2
+1779278338180,1984,GET /app/dashboard-0,302,Found,Thread Group 1-8,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1822,0,2
+1779278340165,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-8,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278338385,1994,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1837,0,0
+1779278338385,1993,GET /app/dashboard-0,302,Found,Thread Group 1-3,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1837,0,0
+1779278340379,0,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-3,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,0
+1779278338594,1976,GET /login,200,OK,Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1818,0,1
+1779278338788,1971,POST /login,419,unknown status,Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1809,0,0
+1779278338996,1948,POST /login,419,unknown status,Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1804,0,0
+1779278339185,1947,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1802,0,0
+1779278339185,1947,GET /app/dashboard-0,302,Found,Thread Group 1-5,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1802,0,0
+1779278341132,0,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-5,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,0
+1779278339382,1950,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1786,0,1
+1779278339382,1947,GET /app/dashboard-0,302,Found,Thread Group 1-1,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1786,0,1
+1779278341330,2,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-1,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,2
+1779278339576,1955,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1794,0,0
+1779278339576,1954,GET /app/dashboard-0,302,Found,Thread Group 1-9,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1794,0,0
+1779278341531,0,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-9,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,0
+1779278339781,1966,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1807,0,1
+1779278339781,1963,GET /app/dashboard-0,302,Found,Thread Group 1-2,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1807,0,1
+1779278341745,2,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-2,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,2
+1779278339982,1967,POST /login,419,unknown status,Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1813,0,1
+1779278340169,2006,GET /login,200,OK,Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1846,0,0
+1779278340380,2012,GET /login,200,OK,Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1850,0,0
+1779278340571,2024,POST /login,419,unknown status,Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1865,0,1
+1779278340759,2038,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1866,0,1
+1779278340759,2036,GET /app/dashboard-0,302,Found,Thread Group 1-10,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1866,0,1
+1779278342796,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-10,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278340944,2043,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1882,0,2
+1779278340944,2042,GET /app/dashboard-0,302,Found,Thread Group 1-6,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1882,0,2
+1779278342986,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-6,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278341133,2069,GET /login,200,OK,Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1915,0,0
+1779278341333,2103,GET /login,200,OK,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1938,0,2
+1779278341533,2117,GET /login,200,OK,Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1957,0,1
+1779278341748,2106,GET /login,200,OK,Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1954,0,1
+1779278341950,2104,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1936,0,0
+1779278341950,2102,GET /app/dashboard-0,302,Found,Thread Group 1-4,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1936,0,0
+1779278344053,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-4,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278342177,2078,POST /login,419,unknown status,Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1925,0,1
+1779278342399,2058,POST /login,419,unknown status,Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1896,0,1
+1779278342596,2060,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1909,0,0
+1779278342596,2057,GET /app/dashboard-0,302,Found,Thread Group 1-7,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1909,0,0
+1779278344654,2,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-7,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,2
+1779278342797,2051,GET /login,200,OK,Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1904,0,1
+1779278342990,2069,GET /login,200,OK,Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1913,0,1
+1779278343203,2063,POST /login,419,unknown status,Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1913,0,1
+1779278343441,2022,POST /login,419,unknown status,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1859,0,1
+1779278343655,2001,POST /login,419,unknown status,Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1846,0,1
+1779278343860,2021,POST /login,419,unknown status,Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1871,0,3
+1779278344056,2035,GET /login,200,OK,Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1888,0,1
+1779278344256,2045,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1877,0,1
+1779278344256,2044,GET /app/dashboard-0,302,Found,Thread Group 1-8,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1877,0,1
+1779278346300,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-8,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278344459,2045,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1887,0,1
+1779278344459,2044,GET /app/dashboard-0,302,Found,Thread Group 1-3,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1887,0,1
+1779278346503,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-3,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278344657,2044,GET /login,200,OK,Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1888,0,2
+1779278344852,2072,POST /login,419,unknown status,Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1908,0,1
+1779278345065,2083,POST /login,419,unknown status,Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1923,0,1
+1779278345267,2096,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1941,0,1
+1779278345267,2094,GET /app/dashboard-0,302,Found,Thread Group 1-5,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1941,0,1
+1779278347361,2,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-5,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,2
+1779278345464,2095,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1932,0,1
+1779278345464,2093,GET /app/dashboard-0,302,Found,Thread Group 1-1,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1932,0,1
+1779278347558,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-1,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278345657,2107,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1956,0,1
+1779278345657,2105,GET /app/dashboard-0,302,Found,Thread Group 1-9,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1956,0,1
+1779278347763,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-9,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278345882,2088,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1934,0,0
+1779278345882,2087,GET /app/dashboard-0,302,Found,Thread Group 1-2,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1934,0,0
+1779278347969,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-2,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278346094,2066,POST /login,419,unknown status,Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1914,0,1
+1779278346301,2058,GET /login,200,OK,Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1899,0,1
+1779278346505,2039,GET /login,200,OK,Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1879,0,0
+1779278346707,2040,POST /login,419,unknown status,Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1884,0,1
+1779278346926,2008,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1851,0,0
+1779278346926,2006,GET /app/dashboard-0,302,Found,Thread Group 1-10,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1851,0,0
+1779278348933,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-10,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278347150,1979,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1823,0,1
+1779278347150,1977,GET /app/dashboard-0,302,Found,Thread Group 1-6,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1823,0,1
+1779278349128,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-6,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278347364,1950,GET /login,200,OK,Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1797,0,0
+1779278347561,1944,GET /login,200,OK,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1782,0,1
+1779278347767,1938,GET /login,200,OK,Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1786,0,1
+1779278347971,1929,GET /login,200,OK,Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1773,0,0
+1779278348161,1967,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1786,0,0
+1779278348161,1965,GET /app/dashboard-0,302,Found,Thread Group 1-4,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1786,0,0
+1779278350127,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-4,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278348362,1967,POST /login,419,unknown status,Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1819,0,1
+1779278348549,1986,POST /login,419,unknown status,Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1830,0,1
+1779278348748,2030,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1845,0,3
+1779278348748,2029,GET /app/dashboard-0,302,Found,Thread Group 1-7,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1845,0,3
+1779278350777,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-7,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278348936,2054,GET /login,200,OK,Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1897,0,0
+1779278349130,2063,GET /login,200,OK,Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1909,0,0
+1779278349315,2100,POST /login,419,unknown status,Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1938,0,1
+1779278349507,2124,POST /login,419,unknown status,Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1956,0,1
+1779278349707,2150,POST /login,419,unknown status,Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1986,0,0
+1779278349901,2149,POST /login,419,unknown status,Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,1992,0,0
+1779278350129,2158,GET /login,200,OK,Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,1985,0,1
+1779278350331,2191,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,2026,0,1
+1779278350331,2190,GET /app/dashboard-0,302,Found,Thread Group 1-8,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,2026,0,1
+1779278352521,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-8,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278350536,2194,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,2031,0,1
+1779278350536,2192,GET /app/dashboard-0,302,Found,Thread Group 1-3,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,2031,0,1
+1779278352729,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-3,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278350780,2178,GET /login,200,OK,Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,10,10,http://host.docker.internal:8000/login,2015,0,0
+1779278350993,2174,POST /login,419,unknown status,Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,2021,0,1
+1779278351194,2167,POST /login,419,unknown status,Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,10,10,http://host.docker.internal:8000/login,2012,0,1
+1779278351417,2168,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,2011,0,0
+1779278351417,2167,GET /app/dashboard-0,302,Found,Thread Group 1-5,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,2011,0,0
+1779278353584,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-5,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278351633,2155,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,10,10,http://localhost:8000/login,1994,0,2
+1779278351633,2154,GET /app/dashboard-0,302,Found,Thread Group 1-1,text,true,,1566,952,10,10,http://host.docker.internal:8000/app/dashboard,1994,0,2
+1779278353787,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-1,text,false,,3164,0,10,10,http://localhost:8000/login,0,0,1
+1779278351857,2117,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,9,9,http://localhost:8000/login,1968,0,1
+1779278351857,2115,GET /app/dashboard-0,302,Found,Thread Group 1-9,text,true,,1566,952,9,9,http://host.docker.internal:8000/app/dashboard,1968,0,1
+1779278353973,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-9,text,false,,3164,0,9,9,http://localhost:8000/login,0,0,1
+1779278352051,2132,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,9,9,http://localhost:8000/login,1972,0,2
+1779278352051,2130,GET /app/dashboard-0,302,Found,Thread Group 1-2,text,true,,1566,952,9,9,http://host.docker.internal:8000/app/dashboard,1972,0,2
+1779278354182,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-2,text,false,,3164,0,9,9,http://localhost:8000/login,0,0,1
+1779278352293,2123,POST /login,419,unknown status,Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,8,8,http://host.docker.internal:8000/login,1952,0,1
+1779278352523,2083,GET /login,200,OK,Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,8,8,http://host.docker.internal:8000/login,1937,0,0
+1779278352732,2076,GET /login,200,OK,Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,8,8,http://host.docker.internal:8000/login,1908,0,0
+1779278352964,2053,POST /login,419,unknown status,Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,8,8,http://host.docker.internal:8000/login,1885,0,1
+1779278353170,2052,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,8,8,http://localhost:8000/login,1881,0,1
+1779278353170,2050,GET /app/dashboard-0,302,Found,Thread Group 1-10,text,true,,1566,952,8,8,http://host.docker.internal:8000/app/dashboard,1881,0,1
+1779278355221,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-10,text,false,,3164,0,8,8,http://localhost:8000/login,0,0,1
+1779278353363,2073,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,8,8,http://localhost:8000/login,1916,0,0
+1779278353363,2071,GET /app/dashboard-0,302,Found,Thread Group 1-6,text,true,,1566,952,8,8,http://host.docker.internal:8000/app/dashboard,1916,0,0
+1779278355435,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-6,text,false,,3164,0,8,8,http://localhost:8000/login,0,0,1
+1779278353585,2059,GET /login,200,OK,Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,8,8,http://host.docker.internal:8000/login,1905,0,0
+1779278353975,1888,GET /login,200,OK,Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,8,8,http://host.docker.internal:8000/login,1730,0,0
+1779278354417,1663,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,8,8,http://localhost:8000/login,1503,0,1
+1779278354417,1662,GET /app/dashboard-0,302,Found,Thread Group 1-4,text,true,,1566,952,8,8,http://host.docker.internal:8000/app/dashboard,1503,0,1
+1779278356080,0,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-4,text,false,,3164,0,8,8,http://localhost:8000/login,0,0,0
+1779278354608,1699,POST /login,419,unknown status,Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,8,8,http://host.docker.internal:8000/login,1531,0,1
+1779278354812,1711,POST /login,419,unknown status,Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,8,8,http://host.docker.internal:8000/login,1538,0,2
+1779278355020,1709,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,8,8,http://localhost:8000/login,1548,0,1
+1779278355020,1708,GET /app/dashboard-0,302,Found,Thread Group 1-7,text,true,,1566,952,8,8,http://host.docker.internal:8000/app/dashboard,1548,0,1
+1779278356729,0,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-7,text,false,,3164,0,8,8,http://localhost:8000/login,0,0,0
+1779278355224,1694,GET /login,200,OK,Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,8,8,http://host.docker.internal:8000/login,1540,0,1
+1779278355437,1686,GET /login,200,OK,Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,8,8,http://host.docker.internal:8000/login,1528,0,1
+1779278355649,1666,POST /login,419,unknown status,Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,8,8,http://host.docker.internal:8000/login,1523,0,1
+1779278355868,1644,POST /login,419,unknown status,Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,8,8,http://host.docker.internal:8000/login,1487,0,1
+1779278356081,1614,GET /login,200,OK,Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,8,8,http://host.docker.internal:8000/login,1463,0,0
+1779278356308,1584,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,8,8,http://localhost:8000/login,1441,0,0
+1779278356308,1583,GET /app/dashboard-0,302,Found,Thread Group 1-8,text,true,,1566,952,8,8,http://host.docker.internal:8000/app/dashboard,1441,0,0
+1779278357891,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-8,text,false,,3164,0,8,8,http://localhost:8000/login,0,0,0
+1779278356524,1569,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,8,8,http://localhost:8000/login,1413,0,1
+1779278356524,1568,GET /app/dashboard-0,302,Found,Thread Group 1-3,text,true,,1566,952,8,8,http://host.docker.internal:8000/app/dashboard,1413,0,1
+1779278358091,2,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-3,text,false,,3164,0,8,8,http://localhost:8000/login,0,0,1
+1779278356730,1569,GET /login,200,OK,Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,7,7,http://host.docker.internal:8000/login,1413,0,0
+1779278356919,1585,POST /login,419,unknown status,Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,7,7,http://host.docker.internal:8000/login,1432,0,1
+1779278357125,1572,POST /login,419,unknown status,Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,7,7,http://host.docker.internal:8000/login,1416,0,0
+1779278357316,1599,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,7,7,http://localhost:8000/login,1430,0,0
+1779278357316,1599,GET /app/dashboard-0,302,Found,Thread Group 1-5,text,true,,1566,952,7,7,http://host.docker.internal:8000/app/dashboard,1430,0,0
+1779278358914,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-5,text,false,,3164,0,7,7,http://localhost:8000/login,0,0,1
+1779278357513,1601,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,7,7,http://localhost:8000/login,1446,0,1
+1779278357513,1601,GET /app/dashboard-0,302,Found,Thread Group 1-9,text,true,,1566,952,7,7,http://host.docker.internal:8000/app/dashboard,1446,0,1
+1779278359113,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-9,text,false,,3164,0,7,7,http://localhost:8000/login,0,0,1
+1779278357709,1612,POST /login,419,unknown status,Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,7,7,http://host.docker.internal:8000/login,1439,0,1
+1779278357892,1610,GET /login,200,OK,Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,7,7,http://host.docker.internal:8000/login,1456,0,1
+1779278358300,1400,POST /login,419,unknown status,Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,7,7,http://host.docker.internal:8000/login,1248,0,0
+1779278358503,1392,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,7,7,http://localhost:8000/login,1233,0,1
+1779278358503,1391,GET /app/dashboard-0,302,Found,Thread Group 1-10,text,true,,1566,952,7,7,http://host.docker.internal:8000/app/dashboard,1233,0,1
+1779278359894,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-10,text,false,,3164,0,7,7,http://localhost:8000/login,0,0,1
+1779278358697,1396,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,7,7,http://localhost:8000/login,1249,0,1
+1779278358697,1395,GET /app/dashboard-0,302,Found,Thread Group 1-6,text,true,,1566,952,7,7,http://host.docker.internal:8000/app/dashboard,1249,0,1
+1779278360093,0,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-6,text,false,,3164,0,7,7,http://localhost:8000/login,0,0,0
+1779278358916,1373,GET /login,200,OK,Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,7,7,http://host.docker.internal:8000/login,1222,0,1
+1779278359115,1375,GET /login,200,OK,Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,7,7,http://host.docker.internal:8000/login,1212,0,0
+1779278359320,1393,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,7,7,http://localhost:8000/login,1219,0,1
+1779278359320,1388,GET /app/dashboard-0,302,Found,Thread Group 1-4,text,true,,1566,952,7,7,http://host.docker.internal:8000/app/dashboard,1219,0,1
+1779278360709,4,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-4,text,false,,3164,0,7,7,http://localhost:8000/login,0,0,4
+1779278359505,1415,POST /login,419,unknown status,Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,6,6,http://host.docker.internal:8000/login,1259,0,1
+1779278359701,1414,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,6,6,http://localhost:8000/login,1255,0,0
+1779278359701,1413,GET /app/dashboard-0,302,Found,Thread Group 1-7,text,true,,1566,952,6,6,http://host.docker.internal:8000/app/dashboard,1255,0,0
+1779278361114,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-7,text,false,,3164,0,6,6,http://localhost:8000/login,0,0,1
+1779278359895,1409,GET /login,200,OK,Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,6,6,http://host.docker.internal:8000/login,1252,0,1
+1779278360094,1430,GET /login,200,OK,Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,6,6,http://host.docker.internal:8000/login,1260,0,0
+1779278360292,1425,POST /login,419,unknown status,Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,6,6,http://host.docker.internal:8000/login,1275,0,1
+1779278360497,1425,POST /login,419,unknown status,Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,6,6,http://host.docker.internal:8000/login,1258,0,1
+1779278360922,1227,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,6,6,http://localhost:8000/login,1067,0,1
+1779278360922,1226,GET /app/dashboard-0,302,Found,Thread Group 1-8,text,true,,1566,952,6,6,http://host.docker.internal:8000/app/dashboard,1067,0,1
+1779278362148,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-8,text,false,,3164,0,6,6,http://localhost:8000/login,0,0,1
+1779278361116,1238,GET /login,200,OK,Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,6,6,http://host.docker.internal:8000/login,1076,0,1
+1779278361309,1235,POST /login,419,unknown status,Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,6,6,http://host.docker.internal:8000/login,1083,0,1
+1779278361527,1235,POST /login,419,unknown status,Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,6,6,http://host.docker.internal:8000/login,1077,0,1
+1779278361718,1266,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,6,6,http://localhost:8000/login,1093,0,0
+1779278361718,1262,GET /app/dashboard-0,302,Found,Thread Group 1-5,text,true,,1566,952,6,6,http://host.docker.internal:8000/app/dashboard,1093,0,0
+1779278362982,2,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-5,text,false,,3164,0,6,6,http://localhost:8000/login,0,0,2
+1779278361922,1286,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,5,5,http://localhost:8000/login,1116,0,1
+1779278361922,1279,GET /app/dashboard-0,302,Found,Thread Group 1-9,text,true,,1566,952,5,5,http://host.docker.internal:8000/app/dashboard,1116,0,1
+1779278363203,5,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-9,text,false,,3164,0,5,5,http://localhost:8000/login,0,0,5
+1779278362150,1265,GET /login,200,OK,Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,5,5,http://host.docker.internal:8000/login,1108,0,1
+1779278362356,1263,POST /login,419,unknown status,Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,5,5,http://host.docker.internal:8000/login,1104,0,1
+1779278362546,1296,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,5,5,http://localhost:8000/login,1130,0,1
+1779278362546,1292,GET /app/dashboard-0,302,Found,Thread Group 1-10,text,true,,1566,952,5,5,http://host.docker.internal:8000/app/dashboard,1130,0,1
+1779278363840,2,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-10,text,false,,3164,0,5,5,http://localhost:8000/login,0,0,2
+1779278362763,1275,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,5,5,http://localhost:8000/login,1115,0,1
+1779278362763,1272,GET /app/dashboard-0,302,Found,Thread Group 1-6,text,true,,1566,952,5,5,http://host.docker.internal:8000/app/dashboard,1115,0,1
+1779278364037,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-6,text,false,,3164,0,5,5,http://localhost:8000/login,0,0,1
+1779278363210,1033,GET /login,200,OK,Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,4,4,http://host.docker.internal:8000/login,868,0,1
+1779278363419,1034,POST /login,419,unknown status,Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,4,4,http://host.docker.internal:8000/login,850,0,0
+1779278363622,1049,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,4,4,http://localhost:8000/login,881,0,2
+1779278363622,1047,GET /app/dashboard-0,302,Found,Thread Group 1-7,text,true,,1566,952,4,4,http://host.docker.internal:8000/app/dashboard,881,0,2
+1779278364670,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-7,text,false,,3164,0,4,4,http://localhost:8000/login,0,0,1
+1779278363843,1036,GET /login,200,OK,Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[2                ]]]00
+
+****** comparison: [[[Response Code = 2]]]00
+
+/",2792,869,3,3,http://host.docker.internal:8000/login,881,0,1
+1779278364250,843,POST /login,419,unknown status,Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,3,3,http://host.docker.internal:8000/login,673,0,2
+1779278364455,858,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,3,3,http://localhost:8000/login,700,0,1
+1779278364455,856,GET /app/dashboard-0,302,Found,Thread Group 1-8,text,true,,1566,952,3,3,http://host.docker.internal:8000/app/dashboard,700,0,1
+1779278365312,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-8,text,false,,3164,0,3,3,http://localhost:8000/login,0,0,1
+1779278364886,647,POST /login,419,unknown status,Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[419                ]]]
+
+****** comparison: [[[Response Code = 302]]]
+
+/",16810,1163,2,2,http://host.docker.internal:8000/login,480,0,0
+1779278365095,679,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,2,2,http://localhost:8000/login,510,0,1
+1779278365095,675,GET /app/dashboard-0,302,Found,Thread Group 1-9,text,true,,1566,952,2,2,http://host.docker.internal:8000/app/dashboard,510,0,1
+1779278365770,4,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-9,text,false,,3164,0,2,2,http://localhost:8000/login,0,0,4
+1779278365535,442,GET /app/dashboard,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[Response Code = 200                                                  ]]]
+
+/",4730,952,1,1,http://localhost:8000/login,286,0,2
+1779278365535,441,GET /app/dashboard-0,302,Found,Thread Group 1-10,text,true,,1566,952,1,1,http://host.docker.internal:8000/app/dashboard,286,0,2
+1779278365976,1,GET /app/dashboard-1,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)",Thread Group 1-10,text,false,,3164,0,1,1,http://localhost:8000/login,0,0,1

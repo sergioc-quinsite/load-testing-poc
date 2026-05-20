@@ -1,0 +1,8 @@
+services:
+  jmeter:
+    image: justb4/jmeter:latest
+    volumes:
+      - ./tests:/tests
+      - ./results:/results
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
