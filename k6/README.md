@@ -1,26 +1,144 @@
-# Grafana k6
+# k6 Load Testing
 
-# Useful Commands
+Dockerized environment to run k6 load tests with real-time web dashboard and report export.
 
-## Run the load test
-```bash
-docker compose run --rm k6 run workflows.js
-```
+## Requirements
 
-## Run with more virtual users
-
-```bash
-docker compose run --rm k6 run --vus 50 --duration 5m workflows.js
-```
-
-## Run smoke test
+- Docker and Docker Compose installed
+- Test scripts located in `./tests/`
+- `./reports/` directory with write permissions
 
 ```bash
-docker compose run --rm k6 run --vus 1 --iterations 1 workflows.js
+mkdir -p reports && chown 1000:1000 reports
 ```
 
-## Run stress test
+---
+
+## Commands
+
+### Run the default script (`workflows.js`)
 
 ```bash
-docker compose run --rm k6 run --vus 100 --duration 10m workflows.js
+docker compose up
 ```
+
+### Run a specific script
+
+```bash
+SCRIPT=login.js docker compose up
+```
+
+```bash
+SCRIPT=checkout.js docker compose up
+```
+
+### Run in the background
+
+```bash
+SCRIPT=login.js docker compose up -d
+```
+
+### Follow logs (when running in background)
+
+```bash
+docker compose logs -f
+```
+
+### Stop the container
+
+```bash
+docker compose down
+```
+
+### Force recreate the container (after compose changes)
+
+```bash
+docker compose up --force-recreate
+```
+
+---
+
+## Real-time Dashboard
+
+While the test is running, the web dashboard is available at:
+
+```
+http://localhost:5665
+```
+
+Shows live:
+- Active VUs
+- Request rate and latencies (p90, p95, p99)
+- Check statuses
+- HTTP errors
+
+> The dashboard updates automatically — no need to refresh.
+
+---
+
+## Generated Reports
+
+At the end of each test, two files are saved to `./reports/`:
+
+| File | Description |
+|---|---|
+| `report.html` | Interactive visual report from the dashboard |
+| `summary.json` | Full metrics summary in JSON format |
+
+### Viewing the HTML report
+
+`report.html` is a standalone file — no server needed. Open it directly in your browser:
+
+**macOS**
+```bash
+open reports/report.html
+```
+
+**Linux**
+```bash
+xdg-open reports/report.html
+```
+
+**Windows**
+```bash
+start reports/report.html
+```
+
+Or drag and drop the file into your browser from the file explorer.
+
+### Querying the JSON summary
+
+```bash
+cat reports/summary.json | jq .
+```
+
+View only request duration metrics:
+
+```bash
+cat reports/summary.json | jq '.metrics.http_req_duration'
+```
+
+---
+
+## Project Structure
+
+```
+.
+├── docker-compose.yml
+├── tests/
+│   └── workflows.js
+└── reports/
+    ├── report.html
+    └── summary.json
+```
+
+---
+
+## Environment Variables
+
+| Variable | Default | Description |
+|---|---|---|
+| `SCRIPT` | `workflows.js` | Script to run (must be inside `./tests/`) |
+| `K6_WEB_DASHBOARD` | `true` | Enables the web dashboard |
+| `K6_WEB_DASHBOARD_PORT` | `5665` | Dashboard port |
+| `K6_WEB_DASHBOARD_EXPORT` | `/reports/report.html` | HTML report export path |

@@ -20,7 +20,6 @@ const AUTHENTICATED_PATH = __ENV.AUTHENTICATED_PATH;
 
 function urlDecode(value) {
     if (!value) return value;
-
     return value
         .replace(/%3D/g, '=')
         .replace(/%2F/g, '/')

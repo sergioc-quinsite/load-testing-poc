@@ -1,11 +1,23 @@
 services:
   k6:
     image: grafana/k6:latest
-    env_file:
-      - .env
+    user: root
+
+    ports:
+      - "5665:5665"
+
     volumes:
       - ./tests:/scripts
+      - ./reports:/reports
+
     working_dir: /scripts
-    entrypoint: ["k6"]
+
     extra_hosts:
       - "host.docker.internal:host-gateway"
+
+    env_file:
+      - .env    
+
+    entrypoint: ["sh", "-c"]
+    command:
+      - k6 run $${SCRIPT} --summary-export=/reports/summary.json
